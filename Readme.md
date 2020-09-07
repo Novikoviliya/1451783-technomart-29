@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Ilya Novikov](https://up.htmlacademy.ru/htmlcss/29/user/1451783).
-* Наставник: `Неизвестно`.
+* Наставник: '[Алина Шаймиева](https://htmlacademy.ru/profile/id74223)'.
 
 ---
 

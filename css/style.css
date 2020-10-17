@@ -317,7 +317,7 @@ background-color: var(--basic-header);
   height: 71px;
 position: absolute;
 left: 50px;
-top: -18px;
+top: -15px;
 font-size: 16px;
 line-height: 23px;
 font-style: italic;
@@ -368,6 +368,7 @@ border: 3px solid var(--basic-white);
   padding: 0;
   position: absolute;
   left: 330px;
+  top: 5px;
   width: 250px;
   height: 24px;
   font-size: 14px;
@@ -448,6 +449,7 @@ color:var(--basic-fone-contact);
   height: 60px;
   margin: 0;
   padding: 0;
+  margin-top: 7px;
 list-style: none;
 background-color:var(--basic-blue-light);
 box-shadow: inset 0px -5px 0px var(--basic-blue);
@@ -494,7 +496,7 @@ opacity: 0.5;
 .content{
     display: grid;
     padding-top: 59px;
-    padding-bottom: 59px;
+    padding-bottom: 29px;
 font-size: 24px;
 line-height: 30px;
 vertical-align: middle;
@@ -502,7 +504,7 @@ vertical-align: middle;
 .content-list{
  display: grid;
   grid-template-columns: 300px 300px 300px;
-  grid-template-rows: 120px 120px 120px;
+  grid-template-rows: 123px 123px 123px;
   grid-template-areas:
   "materials tool technik ."
    "gallery-slider discount delivery .";
@@ -711,7 +713,7 @@ text-transform: none;
 .image-btn + label::before {
   content: "";
   position: absolute;
-  bottom: 52px;
+  bottom: 58px;
   left: 297px;
   width: 10px;
   height: 10px;
@@ -721,7 +723,7 @@ text-transform: none;
 .image-btn:checked + label::after{
     content: "";
   position: absolute;
-  bottom: 54px;
+  bottom: 60px;
   left: 299px;
   width: 6px;
   height: 6px;
@@ -791,13 +793,15 @@ background-color: var(--basic-orange-yellow);
 /*popular-items*/
 .popular-items{
   height: 420px;
-  margin-bottom: 70px;
+  margin-bottom: 77px;
 }
 .popular-items-title{
     display: flex;
   align-items: center;
   justify-content: space-between;
   height: 89px;
+  margin: 0;
+  padding: 0;
     padding-left: 25px;
       margin-bottom: 20px;
   font-size:30px;
@@ -819,8 +823,7 @@ font: inherit;
 .popular-items-button{
 width: 192px;
   height: 38px;
-  padding: 0;
-margin: 0;
+  margin-right: 14px;
 font-size: 14px;
 line-height:18px;
 color: var(--basic-white);
@@ -1056,8 +1059,9 @@ border-left-color: var(--basic-active-red);
   align-items: center;
   justify-content: space-between;
   height: 89px;
-      padding-left: 25px;
-      margin-bottom: 20px;
+  margin: 0;
+  padding: 0;
+        padding-left: 25px;
 text-transform: uppercase;
 text-align: center;
 color: var(--basic-blue-light);
@@ -1073,7 +1077,7 @@ font: inherit;
   line-height: 30px;
 }
 .popular-brand-title button{
-  margin: 0;
+    margin-right: 18px;
 }
 .popular-brand-button{
 width: 192px;
@@ -1166,8 +1170,8 @@ box-sizing: border-box;
 }
 .brand-img-6 img{
   position: absolute;
-  top: 36px;
-  left: 50px;
+  top: 35px;
+  left: 47px;
   bottom: 36px;
   right: 49px;
 }
@@ -1180,8 +1184,8 @@ box-sizing: border-box;
 }
 .brand-img-8 img{
   position: absolute;
-  top: 34px;
-  left: 8px;
+  top: 38px;
+  left: 6px;
   bottom: 42px;
   right: 8px;
 }
@@ -1440,7 +1444,7 @@ border: none;
     display: grid;
       grid-template-columns: 470px 470px;
       column-gap: 170px;
-            margin-bottom: 70px;
+            margin-bottom: 72px;
 }
 .about-company h2{
   padding: 0;
@@ -1467,7 +1471,7 @@ color: var(--basic-black);
   padding: 0;
 }
 .about-company-info p:first-child{
-padding-bottom: 28px;
+padding-bottom: 25px;
 }
 .activity-company{
   margin: 0;
@@ -1480,7 +1484,7 @@ position: relative;
 margin: 0;
 padding: 0;
   font-size: 18px;
-line-height: 34px;
+line-height: 35px;
 }
 .activity-company li:nth-child(1)::before{
     content: "";
@@ -1509,6 +1513,7 @@ line-height: 34px;
 }
 .company-direction{
   position: relative;
+  padding-top: 1px;
   padding-left: 37px;
   font: inherit;
  color: var(--basic-black);
@@ -1516,7 +1521,7 @@ line-height: 34px;
 .about-company button{
   margin: 0;
   padding: 0;
-    margin-top: 20px;
+    margin-top: 14px;
 }
 .about-company-button{
   width: 220px;
@@ -1553,7 +1558,7 @@ border: none;
 .company-contacts button{
   margin: 0;
 padding: 0;
-  margin-top: 20px;
+  margin-top: 24px;
 }
 .company-contacts h2{
   margin: 0;
@@ -2826,6 +2831,7 @@ color: var(--basic-black);
 box-sizing: border-box;
 border-radius: 2px;
 color: var(--basic-black);
+text-transform: uppercase;
 }
 .about-perforators h2{
   font-family: "Cuprum", Arial, sans-serif;

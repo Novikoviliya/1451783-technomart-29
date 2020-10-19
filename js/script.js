@@ -47,8 +47,8 @@ const two = document.querySelector(".about-garanty");
 const three = document.querySelector(".about-credit");
 delivery.onclick = function() {
     one.classList.toggle("shadow-slider");
-     three.classList.add("shadow-slider");
-        three.classList.add("shadow-slider");
+    three.classList.add("shadow-slider");
+    three.classList.add("shadow-slider");
 }
 garanty.onclick = function() {
     two.classList.toggle("shadow-slider");

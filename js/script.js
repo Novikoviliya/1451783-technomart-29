@@ -46,17 +46,19 @@ const one = document.querySelector(".about-delivery");
 const two = document.querySelector(".about-garanty");
 const three = document.querySelector(".about-credit");
 delivery.onclick = function() {
-    two.classList.remove("show-slider");
-    three.classList.remove("show-slider");
-    one.classList.toggle("show-slider");
+    one.classList.toggle("shadow-slider");
+     three.classList.add("shadow-slider");
+        three.classList.add("shadow-slider");
 }
 garanty.onclick = function() {
-    two.classList.toggle("show-slider");
-    one.classList.remove("show-slider");
+    two.classList.toggle("shadow-slider");
+    three.classList.add("shadow-slider");
+    one.classList.add("shadow-slider");
 }
 credit.onclick = function() {
-        two.classList.toggle("show-slider");
-        three.classList.remove("show-slider");
+        two.classList.add("shadow-slider");
+        three.classList.toggle("shadow-slider");
+        one.classList.add("shadow-slider");
     }
     /*added-card*/
 const buy = document.querySelectorAll(".buy-button");

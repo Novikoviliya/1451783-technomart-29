@@ -202,9 +202,9 @@ img {
 .main-header-logo {
     width: 220px;
     height: 47px;
-    font-size: 24px;
+    font-size: 23px;
     text-align: center;
-    padding-top: 12px;
+    padding-top: 11px;
     color: inherit;
     background-color: var(--basic-red);
     text-transform: uppercase;
@@ -247,7 +247,7 @@ img {
 .search-form input[type="text"] {
     width: 270px;
     height: 42px;
-    padding-left: 40px;
+    padding-left: 42px;
     font: inherit;
     color: var(--basic-white);
     background-color: var(--basic-blue);
@@ -298,7 +298,7 @@ img {
     width: 150px;
     height: 42px;
     padding-top: 10px;
-    padding-left: 42px;
+    padding-left: 43px;
     color: inherit;
     background-color: var(--basic-blue)
 }
@@ -336,7 +336,7 @@ img {
     width: 150px;
     height: 42px;
     padding-top: 10px;
-    padding-left: 46px;
+    padding-left: 49px;
     color: inherit;
     background-color: var(--basic-blue);
 }
@@ -345,7 +345,7 @@ img {
     content: "";
     position: absolute;
     top: 13px;
-    left: 23px;
+    left: 26px;
     width: 15px;
     height: 15px;
     background-image: url(../img/icon-cart.svg);
@@ -426,21 +426,25 @@ img {
 .contact-phone::before {
     content: "";
     position: absolute;
-    left: 35px;
-    top: 8px;
+    left: 36px;
+    top: 11px;
     width: 18px;
     height: 19px;
     background-image: url(../img/icon-phone.svg);
 }
 
 .contact-phone {
-    padding-top: 5px;
-    padding-left: 73px;
+    padding-top: 6px;
+    padding-left: 72px;
+    letter-spacing: 0.3px;
     position: absolute;
     left: 320px;
     bottom: 0;
     width: 270px;
     height: 45px;
+    font-family: "Cuprum", Arial, sans-serif;
+font-style: normal;
+font-weight: bold;
     font-size: 21px;
     line-height: 30px;
     color: var(--basic-red);
@@ -487,7 +491,8 @@ img {
 .login::before {
     content: "";
     position: absolute;
-    left: 19px;
+    top: 14px;
+    left: 18px;
     width: 20px;
     height: 17px;
     background-image: url(../img/icon-login.svg);
@@ -585,11 +590,66 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
 .cart-catalog {
+ width: 136px;
+ height: 42px;
+  padding-top: 10px;
+    padding-left: 35px;
+    color: inherit;
     background-color: var(--basic-red);
+    position: relative;
 }
-
+.cart-catalog::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 12px;
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/icon-cart.svg);
+    opacity: 0.3;
+}
+.cart-catalog:hover:before {
+    opacity: 1;
+}
+.cart-catalog:hover:active {
+    opacity: 0.3;
+}
+.cart-catalog:hover:focus {
+    opacity: 0.3;
+}
+.bookmarks-catalog{
+  width: 164px;
+  height: 42px;
+  position: relative;
+    padding-top: 10px;
+    padding-left: 43px;
+    color: inherit;
+    background-color: var(--basic-blue)
+}
+.bookmarks-catalog::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 20px;
+    width: 14px;
+    height: 16px;
+    background-image: url(../img/icon-bookmarks.svg);
+    opacity: 0.3;
+}
+.bookmarks-catalog:hover:before {
+    opacity: 1;
+}
+.bookmarks-catalog:hover:active {
+    opacity: 0.3;
+}
+.bookmarks-catalog:hover:focus {
+    opacity: 0.3;
+}
+.bookmarks-catalog:active {
+    color: var(--basic-alternative);
+    background-color: var(--basic-active);
+}
 .content {
     display: grid;
     padding-top: 59px;
@@ -718,6 +778,7 @@ img {
     width: 240px;
     height: 36px;
     position: absolute;
+    letter-spacing: 0.8px;
     top: 23px;
     left: 24px;
     bottom: 45px;
@@ -852,7 +913,7 @@ img {
 
 .slider-controls {
     position: absolute;
-    bottom: 130px;
+    bottom: 134px;
     left: 25px;
     z-index: 20;
     display: flex;
@@ -930,7 +991,7 @@ img {
     height: 89px;
     margin: 0;
     padding: 0;
-    padding-left: 25px;
+    padding-left: 27px;
     margin-bottom: 20px;
     font-size: 30px;
     line-height: 30px;
@@ -990,13 +1051,14 @@ img {
 }
 
 .popular-items-list h3 {
+  width: 157px;
+  height: 41px;
     font-family: "PT Sans", Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 20px;
 }
-
 .popular-item-catalog:nth-child(even)::before {
     content: "";
     position: absolute;
@@ -1130,9 +1192,9 @@ img {
 .popular-items-list h3 {
     position: absolute;
     top: 178px;
-    left: 18px;
+    left: 30px;
     bottom: 97px;
-    right: 17px;
+    right: 24px;
     margin: 0;
     padding: 0;
     font-size: 18px;
@@ -1161,15 +1223,15 @@ img {
 }
 
 .new-price-button {
-    padding-right: 15px;
-    margin-top: 259px;
-    margin-left: 15px;
+    padding-right: 20px;
+    margin-top: 258px;
+    margin-left: 16px;
     width: 141px;
     height: 38px;
     font-family: PT Sans;
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 18px;
     color: var(--basic-white);
     background-color: var(--basic-red);
@@ -1223,7 +1285,7 @@ img {
     height: 89px;
     margin: 0;
     padding: 0;
-    padding-left: 25px;
+    padding-left: 28px;
     text-transform: uppercase;
     text-align: center;
     color: var(--basic-blue-light);
@@ -1235,6 +1297,7 @@ img {
     height: 30px;
     padding: 0;
     margin: 0;
+    padding-top: 1px;
     font: inherit;
     font-size: 30px;
     line-height: 30px;
@@ -1413,7 +1476,7 @@ img {
     width: 394px;
     height: 49px;
     position: absolute;
-    top: 119px;
+    top: 118px;
     font-family: "PT Sans", Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -1432,11 +1495,14 @@ img {
 .service-delivery-button {
     width: 241px;
     height: 61px;
-    font: inherit;
+ font-family: "Cuprum", Arial, sans-serif;
+font-style: normal;
+font-weight: bold;
     font-size: 21px;
     line-height: 30px;
-    text-align: left;
-    padding-left: 25px;
+ padding-left: 22px;
+padding-right: 139px;
+letter-spacing: 0.6px;
     background-color: var(--basic-white);
     color: var(--basic-bookmark-hover);
     border: none;
@@ -1459,9 +1525,12 @@ img {
 .service-garanty-button {
     width: 240px;
     height: 61px;
-    text-align: left;
-    padding-left: 25px;
-    font: inherit;
+    padding-right: 140px;
+    padding-left: 22px;
+    letter-spacing: 0.6px;
+   font-family: "Cuprum", Arial, sans-serif;
+font-style: normal;
+font-weight: bold;
     font-size: 21px;
     line-height: 30px;
     color: var(--basic-white);
@@ -1482,9 +1551,12 @@ img {
 .service-credit-button {
     width: 240px;
     height: 61px;
-    text-align: left;
-    padding-left: 25px;
-    font: inherit;
+    padding-left: 22px;
+    padding-right: 157px;
+    letter-spacing: 0.6px;
+   font-family: "Cuprum", Arial, sans-serif;
+font-style: normal;
+font-weight: bold;
     font-size: 21px;
     line-height: 30px;
     color: var(--basic-white);
@@ -1502,8 +1574,8 @@ img {
     color: var(--basic-blue-light);
 }
 
-.show-slider {
-    display: block;
+.shadow-slider{
+    display: none;
 }
 
 .about-delivery {
@@ -1536,8 +1608,7 @@ img {
     position: absolute;
     top: 295px;
     left: 320px;
-    bottom: 128px;
-    width: 300px;
+        width: 300px;
     height: 99px;
     font-family: "PT Sans", Arial, sans-serif;
     font-style: normal;
@@ -1552,16 +1623,15 @@ img {
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 260px;
-    left: 475px;
+    top: 257px;
+    left: 471px;
     right: 131px;
     bottom: 4px;
-    width: 461px;
+    width: 468px;
     height: 261px;
 }
 
 .about-garanty {
-    display: none;
     position: relative;
     width: 620px;
     height: 285px;
@@ -1608,7 +1678,7 @@ img {
 }
 
 .about-credit {
-    display: none;
+
     position: relative;
     width: 620px;
     height: 285px;
@@ -1655,7 +1725,14 @@ img {
 }
 
 .credit-button {
-    font: inherit;
+   width: 212px;
+    height: 18px;
+    position: absolute;
+    left: 320px;
+    top: 375px;
+  font-family: "Cuprum", Arial, sans-serif;
+font-style: normal;
+font-weight: normal;
     font-size: 14px;
     line-height: 18px;
     text-align: center;
@@ -1724,7 +1801,10 @@ img {
 .activity-company li {
     display: block;
     margin: 0;
-    padding: 5px 0px 5px 0px;
+    padding: 3px 0px 9px 0px;
+    font-family: "Cuprum", Arial, sans-serif;
+font-style: normal;
+font-weight: normal;
     font-size: 18px;
     line-height: 24px;
 }
@@ -1750,7 +1830,7 @@ img {
 .activity-company li:nth-child(3)::before {
     content: "";
     position: absolute;
-    top: 83px;
+    top: 84px;
     width: 25px;
     height: 2px;
     background-color: var(--basic-red);
@@ -1758,7 +1838,6 @@ img {
 
 .company-direction {
     position: relative;
-    padding-top: 1px;
     padding-left: 37px;
     font: inherit;
     color: var(--basic-black);
@@ -1767,16 +1846,18 @@ img {
 .about-company button {
     margin: 0;
     padding: 0;
-    margin-top: 16px;
+    margin-top: 9px;
+    padding-top: 5px;
 }
 
 .about-company-button {
     width: 220px;
     height: 38px;
-    font: inherit;
+font-family: "Cuprum", Arial, sans-serif;
+font-style: normal;
+font-weight: normal;
     font-size: 14px;
     line-height: 18px;
-    text-align: center;
     text-transform: uppercase;
     color: var(--basic-white);
     background-color: var(--basic-red);
@@ -1809,6 +1890,10 @@ img {
     margin: 0;
     padding: 0;
     margin-top: 24px;
+    padding-top: 4px;
+        font-family: "Cuprum", Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
 }
 
 .company-contacts h2 {
@@ -1843,12 +1928,8 @@ img {
 .button-contacts {
     width: 300px;
     height: 38px;
-    font-family: "Cuprum", Arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 18px;
-    text-align: center;
     text-transform: uppercase;
     background-color: var(--basic-red);
     color: var(--basic-white);
@@ -1914,7 +1995,7 @@ img {
 .footer-list a {
     display: block;
     padding-top: 37px;
-    padding-left: 58px;
+    padding-left: 59px;
     padding-bottom: 34px;
 }
 
@@ -1945,6 +2026,7 @@ img {
     height: 49px;
     position: absolute;
     top: 90px;
+    left: 3px;
     margin: 0;
     padding: 0;
     font: inherit;
@@ -1956,6 +2038,7 @@ img {
     height: 49px;
     position: absolute;
     top: 115px;
+      left: 3px;
     margin: 0;
     padding: 0;
     font: inherit;
@@ -1974,7 +2057,7 @@ img {
 }
 
 .page-footer-bottom li {
-    padding-left: 58px;
+    padding-left: 59px;
 }
 
 .page-footer-bottom-list {
@@ -1994,21 +2077,22 @@ img {
 /*second page footer*/
 
 .page-footer-down {
-    height: 110px;
+    height: 107px;
     background-color: var(--basic-blue);
 }
 
 .position-feedback {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 36px;
+    padding-top: 35px;
     margin: 0;
 }
 
 .copyright p {
     margin: 0;
     padding: 0;
-    text-align: left;
+    padding-top: 2px;
+    padding-left: 1px;
     font-family: "Cuprum", Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -2090,12 +2174,14 @@ img {
 
 .feedbacks li:first-child {
     position: absolute;
-    left: 325px;
+    left: 323px;
+    top: 1px;
 }
 
 .feedbacks li:last-child {
     position: absolute;
-    left: 514px;
+    left: 511px;
+    top: 1px;
 }
 
 .footer-feedback {
@@ -2380,7 +2466,7 @@ img {
 /*Catalog-header*/
 
 .login-name {
-    padding: 10px;
+    padding: 14px;
     position: absolute;
     left: 190px;
     bottom: 0px;
@@ -2397,7 +2483,7 @@ img {
 .login-name::before {
     content: "";
     position: absolute;
-    left: 15px;
+    left: 16px;
     background-image: url(../img/icon-user.svg);
     width: 20px;
     height: 18px;
@@ -2435,7 +2521,7 @@ img {
 .my-order {
     width: 105px;
     position: absolute;
-    top: 7px;
+    top: 9px;
     left: 220px;
     font: inherit;
     font-size: 16px;
@@ -2447,10 +2533,10 @@ img {
 .my-order::after {
     content: "";
     position: absolute;
-    top: 5px;
+    top: 7px;
     left: 104px;
-    width: 6px;
-    height: 7px;
+    width: 5px;
+    height: 5px;
     background-color: var(--basic-blue-light);
     border-radius: 50%;
 }
@@ -2458,7 +2544,7 @@ img {
 .my-cabinet {
     width: 105px;
     position: absolute;
-    top: 7px;
+    top: 9px;
     left: 340px;
     font: inherit;
     font-size: 16px;
@@ -2478,6 +2564,7 @@ img {
 }
 
 .main-header-cart-catalog {
+  width: 136px;
     font: inherit;
     color: var(--basic-white);
     background-color: var(--basic-red);
@@ -2499,34 +2586,43 @@ img {
     align-items: flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    font-family: "PT Sans", Arial, sans-serif;
+        font-family: "PT Sans", Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 18px;
+    margin: 0;
+    padding: 0;
     list-style: none;
     position: relative;
 }
 
 .main-catalog-unit a {
     display: block;
-    padding: 20px 42px 20px 0;
+    padding: 21px 41px 20px 0;
 }
 
+.main-catalog-unit li:first-child{
+  padding-top: 3px;
+}
+.main-catalog-unit li:last-child{
+  padding-left: 1px;
+}
 .main-item {
     text-transform: uppercase;
     color: var(--basic-black);
 }
-
+.main-item img{
+  width: 14px;
+  height: 12px;
+}
 .main-catalog-unit li:first-child::before {
     content: "";
     position: absolute;
     width: 8px;
     height: 12px;
-    top: 24px;
-    left: 30px;
+    top: 25px;
+    left: 29px;
     background-image: url(../img/icon-right-small.svg);
 }
 
@@ -2586,7 +2682,7 @@ img {
     margin: 0;
     padding: 0;
     padding-left: 18px;
-    padding-top: 10px;
+    padding-top: 8px;
     color: var(--basic-black);
     background-color: var(--basic-filter-bg);
     text-transform: uppercase;
@@ -2608,7 +2704,7 @@ img {
     grid-template-columns: 220px 700px;
     grid-template-rows: 20px 20px;
     column-gap: 20px;
-    grid-row-gap: 28px;
+    grid-row-gap: 25px;
 }
 
 
@@ -2618,7 +2714,7 @@ img {
     display: flex;
     justify-content: space-between;
     height: 38px;
-    padding: 10px 20px;
+    padding: 8px 20px;
     font-family: "PT Sans", Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -2643,7 +2739,7 @@ img {
 
 .by-price {
     position: absolute;
-    right: 405px;
+    right: 406px;
     color: var(--basic-red);
     mix-blend-mode: normal;
 }
@@ -2661,7 +2757,7 @@ img {
 
 .by-type {
     position: absolute;
-    right: 285px;
+    right: 284px;
     color: var(--basic-black);
     mix-blend-mode: normal;
     opacity: 0.3;
@@ -2705,7 +2801,7 @@ img {
 
 .up-button {
     position: absolute;
-    top: 15px;
+    top: 13px;
     right: 47px;
     border: none;
     width: 11px;
@@ -2724,8 +2820,8 @@ img {
 
 .down-button {
     position: absolute;
-    top: 15px;
-    right: 18px;
+    top: 13px;
+    right: 15px;
     width: 11px;
     height: 10px;
     border: none;
@@ -2846,7 +2942,7 @@ img {
     width: 95px;
     height: 38px;
     padding: 9px;
-    padding-left: 20px;
+    padding-left: 24px;
     text-align: center;
     border: none;
     background-color: var(--basic-filter-bg);
@@ -2862,7 +2958,7 @@ img {
 }
 
 .filter-item-form fieldset:nth-child(2) {
-    margin-top: 42px;
+    margin-top: 41px;
 }
 
 .filter-item-form fieldset:first-child:after {
@@ -2877,7 +2973,7 @@ img {
 .filter-item-form fieldset:nth-child(2):after {
     content: "";
     position: absolute;
-    top: 261px;
+    top: 250px;
     width: 220px;
     height: 1px;
     border: 1px solid var(--basic-button-show);
@@ -2894,18 +2990,17 @@ img {
     text-transform: uppercase;
     color: var(--basic-black);
 }
-
 .item-maker-list {
     margin-bottom: 20px;
 }
 
 .power {
-    padding-top: 25px;
-    padding-bottom: 8px;
+    padding-top: 27px;
+    padding-bottom: 7px;
 }
 
 .filter-option {
-    padding-left: 36px;
+    padding-left: 35px;
 }
 
 .filter-option label {
@@ -2914,12 +3009,11 @@ img {
     cursor: pointer;
     user-select: none;
 }
-
 .filter-input-checkbox+label::before {
     content: "";
     position: absolute;
-    left: -35px;
-    top: -4px;
+    left: -36px;
+    top: -2px;
     width: 23px;
     height: 23px;
     background-image: url(../img/checkbox-off.svg);
@@ -2928,8 +3022,8 @@ img {
 .filter-input-checkbox:checked+label::before {
     content: "";
     position: absolute;
-    top: -4px;
-    left: -35px;
+    top: -3px;
+    left: -36px;
     width: 23px;
     height: 23px;
     background-image: url("../img/checkbox-on.svg");
@@ -2987,9 +3081,8 @@ img {
 }
 
 .item-power-list {
-    margin-bottom: 23px;
+    margin-bottom: 22px;
 }
-
 .show-button {
     width: 220px;
     height: 38px;
@@ -3045,7 +3138,22 @@ img {
     height: 70px;
     background-image: url(../img/new.png);
 }
-
+.item-catalog-info:nth-child(4)::before {
+    content: "";
+    position: absolute;
+    left: 149px;
+    width: 70px;
+    height: 70px;
+    background-image: url(../img/new.png);
+}
+.item-catalog-info:nth-child(7)::before {
+    content: "";
+    position: absolute;
+    left: 149px;
+    width: 70px;
+    height: 70px;
+    background-image: url(../img/new.png);
+}
 .item-catalog-info:hover .hover-button {
     display: block;
     position: absolute;
@@ -3090,9 +3198,9 @@ img {
     font-size: 18px;
     line-height: 20px;
     position: absolute;
-    left: 18px;
+    left: 15px;
     right: 15px;
-    top: 179px;
+    top: 178px;
     margin: 0;
     padding: 0;
     color: var(--basic-black);

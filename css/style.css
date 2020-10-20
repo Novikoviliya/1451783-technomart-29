@@ -284,6 +284,7 @@ img {
 
 .bar-position {
     display: flex;
+    flex-wrap: wrap;
     width: 940px;
     margin: 0;
     right: 0;
@@ -468,6 +469,7 @@ img {
 
 .header-info-login {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
     padding: 0;
     font-size: 21px;
@@ -929,6 +931,7 @@ img {
     left: 25px;
     z-index: 20;
     display: flex;
+    flex-wrap: wrap;
     width: 575px;
     justify-content: space-between;
 }
@@ -998,6 +1001,7 @@ img {
 
 .popular-items-title {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     height: 89px;
@@ -1293,6 +1297,7 @@ img {
 
 .popular-brand-title {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     height: 89px;
@@ -2059,6 +2064,7 @@ img {
 
 .page-footer-bottom {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-end;
     justify-content: flex-end;
@@ -2129,6 +2135,7 @@ img {
 
 .social-button {
     display: flex;
+    flex-wrap: wrap;
     margin-left: 162px;
     width: 44px;
     height: 44px;
@@ -2179,6 +2186,7 @@ img {
 
 .feedbacks {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     position: relative;
@@ -2728,6 +2736,7 @@ img {
 
 .content-sorting {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     height: 38px;
     padding: 8px 20px;
@@ -2937,6 +2946,7 @@ img {
 
 .price-controls {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -3248,8 +3258,8 @@ img {
 
 .page-list {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 284px;
     height: 38px;
     margin: 0;
@@ -3264,29 +3274,34 @@ img {
     line-height: 18px;
     text-align: center;
     color: var(--basic-black);
+    cursor: pointer;
 }
 
 .page-list li {
-    display: flex;
-    padding: 0 10px 0 0;
-}
-
-.page-list a {
+    display: block;
     padding: 7px;
 }
 
-.page-list a:active {
+.page-list a {
+    color: var(--basic-black);
+}
+
+.first a {
+    color: var(--basic-white);
+}
+
+.page-list li:active {
     border: 1px solid var(--basic-red);
     border-radius: 2px;
     color: var(--basic-black);
 }
 
-.page-list a:hover {
+.page-list li:hover {
     border: 1px solid var(--basic-fone-contact);
     border-radius: 2px;
 }
 
-.page-list a:active {
+.page-list li:active {
     border: 1px solid var(--basic-red);
     border-radius: 2px;
 }
@@ -3297,7 +3312,6 @@ img {
     background-color: var(--basic-red);
     border: 1px solid var(--basic-button-show);
     border-radius: 2px;
-    color: var(--basic-black);
 }
 
 .second {
@@ -3305,7 +3319,6 @@ img {
     height: 38px;
     border: 1px solid var(--basic-button-show);
     border-radius: 2px;
-    color: var(--basic-black);
 }
 
 .three {
@@ -3313,7 +3326,6 @@ img {
     height: 38px;
     border: 1px solid var(--basic-button-show);
     border-radius: 2px;
-    color: var(--basic-black);
 }
 
 .next-page {
@@ -3339,6 +3351,7 @@ img {
 
 .about-perforators {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     height: 261px;

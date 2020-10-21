@@ -6,7 +6,6 @@
     <title>HTML Academy: Техномарт</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -110,23 +109,18 @@
                     <h3>Скидка 50%</h3>
                     <img src="img/icon-4.svg" width="59" height="71" alt="Корзина">
 
-                    <a class="content-item-button" href="">На 350 товаров
-</a>
+                    <a class="content-item-button" href="">На 350 товаров</a>
                 </li>
                 <li class="content-delivery-item special-bottom">
                     <h3>Доставка</h3>
                     <img src="img/icon-5.svg" width="78" height="63" alt="Машина">
 
-                    <a class="content-item-button" href="">Бесплатно    </a>
+                    <a class="content-item-button" href="">Бесплатно</a>
                 </li>
             </ul>
             <div class="content-item-slider">
-                <div class="focus">
-                    <input class="visible-hidden image-btn" type="radio" id="slider-1" name="toggle" checked>
-                    <label class="next" for="slider-1"></label>
-                    <input class="visible-hidden image-btn" type="radio" id="slider-2" name="toggle">
-                    <label class="down" for="slider-2"></label>
-                </div>
+                <button class="button left-button active"></button>
+                <button class="button right-button"></button>
                 <div class="slider-controls">
                     <a class="slider-btn" href=""></a>
                     <a class="slider-btn right" href=""></a>
@@ -137,7 +131,7 @@
         <section class="popular-items container">
             <div class="popular-items-title container">
                 <h2>Популярные товары:</h2>
-                <button class="button popular-items-button">Все популярные товары</button>
+                <a href="" class="popular-items-button">Все популярные товары</a>
             </div>
             <ul class="popular-items-list">
                 <li class="popular-item-catalog">
@@ -200,7 +194,7 @@
         <section class="popular-brand container">
             <div class="popular-brand-title container">
                 <h2>Популярные производители:</h2>
-                <button class="button popular-brand-button">Все производители</button>
+                <a href="" class="popular-brand-button">Все производители</a>
             </div>
             <ul class="popular-brand-gallery">
                 <li class="brand brand-img-1">
@@ -400,7 +394,7 @@ fill="none" /></svg>
         </div>
     </div>
     <div class="pop-up modal-write-us">
-        <button class="pop-up-close messageClose" type="button">Закрыть</button>
+        <button class="pop-up-close message-сlose" type="button">Закрыть</button>
         <form class="relative-form" action="https://echo.htmlacademy.ru" method="post" id="message">
             <div class="pop-up-wrapper">
                 <div class="column-write">
@@ -420,12 +414,11 @@ fill="none" /></svg>
         </form>
     </div>
     <div class="pop-up modal-static-map">
-        <button class="pop-up-close mapClose" type="button">Закрыть</button>
+        <button class="pop-up-close map-close" type="button">Закрыть</button>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
             width="940" height="360" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
     </div>
     <script src="js/script.js"></script>
-    <script src="js/login.min.js"></script>
 </body>
 
 </html>

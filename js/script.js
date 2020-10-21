@@ -2,7 +2,7 @@
 const close = document.querySelector(".pop-up-close");
 const mapOpen = document.querySelector(".static-map");
 const mapPopup = document.querySelector(".modal-static-map");
-const mapClose = document.querySelector(".mapClose");
+const mapClose = document.querySelector(".map-close");
 if (mapOpen !== null) {
     mapOpen.addEventListener("click", function(evt) {
         evt.preventDefault();
@@ -27,8 +27,8 @@ if (mapOpen !== null) {
 /*Slider*/
 const control = document.querySelector(".slider-gallery-1");
 let sliderTool = document.querySelector(".slider-controls");
-const down = document.querySelector(".down");
-const next = document.querySelector(".next");
+const down = document.querySelector(".left-button");
+const next = document.querySelector(".right-button");
 if (sliderTool !== null) {
     sliderTool.onclick = function(evt) {
         evt.preventDefault();
@@ -36,9 +36,13 @@ if (sliderTool !== null) {
     };
     down.onclick = function() {
         control.classList.toggle("current");
+        next.classList.remove("active");
+        down.classList.add("active");
     }
     next.onclick = function() {
-        control.classList.remove("current");
+        control.classList.toggle("current");
+        next.classList.add("active");
+        down.classList.remove("active");
     }
 }
 /*Service*/
@@ -101,7 +105,7 @@ const form = messagePopup.querySelector(".relative-form");
 const myName = messagePopup.querySelector(".name");
 const email = messagePopup.querySelector(".email");
 const text = messagePopup.querySelector(".message-text");
-const messageClose = document.querySelector(".messageClose");
+const messageClose = document.querySelector(".message-сlose");
 if (messageOpen !== null) {
     messageOpen.addEventListener("click", function(evt) {
         evt.preventDefault();

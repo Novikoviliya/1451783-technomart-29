@@ -680,9 +680,10 @@ img {
     line-height: 30px;
     position: absolute;
     top: 20px;
-    left: 23px;
+    left: 22px;
     bottom: 73px;
-    right: 163px;
+    right: 159px;
+    letter-spacing: 0.7px;
 }
 
 .content-item-materials {

@@ -56,19 +56,22 @@ if (delivery !== null) {
     delivery.onclick = function() {
         one.classList.toggle("shadow-slider");
         three.classList.add("shadow-slider");
-        three.classList.add("shadow-slider");
+        two.classList.add("shadow-slider");
+        delivery.classList.toggle("open-color-1");
     }
 
     garanty.onclick = function() {
         two.classList.toggle("shadow-slider");
         three.classList.add("shadow-slider");
         one.classList.add("shadow-slider");
+        garanty.classList.toggle("open-color");
     }
 
     credit.onclick = function() {
         two.classList.add("shadow-slider");
         three.classList.toggle("shadow-slider");
         one.classList.add("shadow-slider");
+        credit.classList.toggle("open-color");
     }
 }
 /*added-card*/

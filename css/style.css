@@ -537,7 +537,7 @@ img {
 }
 
 .header-site-navigation li {
-    font-family: Cuprum;
+    font-family: "Cuprum", Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -1214,7 +1214,7 @@ img {
     left: 24px;
     bottom: 72px;
     right: 24px;
-    font-family: PT Sans;
+    font-family: "PT Sans", Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 17px;
@@ -1232,7 +1232,7 @@ img {
     margin-left: 16px;
     width: 141px;
     height: 38px;
-    font-family: PT Sans;
+    font-family: "PT Sans", Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 17px;
@@ -1915,7 +1915,7 @@ img {
     margin: 0;
     padding: 0;
     padding-bottom: 24px;
-    font-family: "Cuprum";
+    font-family: "Cuprum", Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;

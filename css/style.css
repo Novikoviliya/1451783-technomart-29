@@ -1902,13 +1902,8 @@ img {
 
 /*contacts-company*/
 
-.company-contacts button {
-    margin: 0;
-    padding: 0;
-    margin-top: 26px;
-    font-family: "Cuprum", Arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
+.company-contacts {
+    position: relative;
 }
 
 .company-contacts h2 {
@@ -1941,8 +1936,14 @@ img {
 }
 
 .button-contacts {
+    padding-top: 11px;
+    position: absolute;
+    bottom: 0px;
     width: 300px;
     height: 38px;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
@@ -1950,6 +1951,8 @@ img {
     color: var(--basic-white);
     border: none;
     cursor: pointer;
+    text-decoration: none;
+    text-align: center;
 }
 
 .button-contacts:hover {
@@ -2764,6 +2767,10 @@ img {
     list-style: none;
 }
 
+.sorting-by a {
+    cursor: pointer;
+}
+
 .by-price {
     position: absolute;
     right: 406px;
@@ -2822,10 +2829,6 @@ img {
     border: none;
 }
 
-.content-sorting button {
-    background-color: transparent;
-}
-
 .up-button {
     position: absolute;
     top: 13px;
@@ -2835,6 +2838,7 @@ img {
     height: 10px;
     background-image: url(../img/icon-up-button.svg);
     background-repeat: no-repeat;
+    text-indent: -9999px;
 }
 
 .up-button:hover {
@@ -2854,6 +2858,7 @@ img {
     border: none;
     background-image: url(../img/icon-down-button.svg);
     background-repeat: no-repeat;
+    text-indent: -9999px;
 }
 
 .down-button:hover {
@@ -3062,6 +3067,10 @@ img {
     background-repeat: no-repeat;
 }
 
+.filter-input-checkbox:disabled+label {
+    opacity: 0.3;
+}
+
 .filter-input-checkbox+label:hover:before {
     background-image: url(../img/checkbox-hover.svg);
 }
@@ -3102,6 +3111,10 @@ img {
     height: 9px;
     border: 5px solid var(--basic-fone-contact);
     border-radius: 50%;
+}
+
+.filter-radio-input:disabled+label {
+    opacity: 0.3;
 }
 
 .filter-radio-input+label:hover:before {
@@ -3205,6 +3218,8 @@ img {
 
 .content-catalog {
     display: grid;
+    margin-left: 20px;
+    padding: 0;
 }
 
 .item-catalog {

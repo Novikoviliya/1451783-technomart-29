@@ -524,13 +524,15 @@ img {
 
 .header-site-navigation {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     flex-wrap: wrap;
     height: 60px;
     margin: 0;
     padding: 0;
     margin-top: 7px;
+    padding-left: 26px;
+    padding-right: 26px;
     list-style: none;
     background-color: var(--basic-blue-light);
     box-shadow: inset 0px -5px 0px var(--basic-blue);
@@ -981,8 +983,8 @@ img {
 /*popular-items*/
 
 .popular-items {
-    height: 420px;
-    margin-bottom: 77px;
+    display: grid;
+    margin-bottom: 70px;
 }
 
 .popular-items-title {
@@ -1038,29 +1040,24 @@ img {
 
 .popular-items-list {
     display: grid;
-    grid-template-columns: 220px 220px 220px 220px;
-    grid-template-rows: 318px 318px 318px 318px;
+    grid-template-columns: repeat(4, 220px);
     column-gap: 20px;
+    min-height: 318px;
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family: "PTSans", Arial, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 20px;
-    text-align: center;
     background-color: var(--basic-white);
 }
 
 .popular-items-list h3 {
-    width: 157px;
-    height: 41px;
+    margin: 0;
+    padding: 0;
     font-family: "PT Sans", Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 20px;
+    color: var(--basic-black);
 }
 
 .popular-item-catalog:nth-child(even)::before {
@@ -1072,9 +1069,36 @@ img {
     background-image: url(../img/new.png);
 }
 
+.popular-item-title {
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+}
+
+.popular-item-title-1 {
+    padding-left: 28px;
+    padding-right: 30px;
+    text-align: center;
+}
+
+.popular-item-title-2 {
+    padding-left: 28px;
+    padding-right: 28px;
+    margin-bottom: 26px;
+}
+
+.popular-item-title-3 {
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-bottom: 2px;
+}
+
 .popular-item-catalog {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     border: 1px solid var(--basic-popular-item);
+    position: relative;
 }
 
 .hover-button {
@@ -1156,7 +1180,7 @@ img {
 }
 
 .popular-item-catalog:hover img {
-    display: none;
+    visibility: hidden;
 }
 
 .popular-item-catalog:hover {
@@ -1164,56 +1188,39 @@ img {
 }
 
 .item-image {
-    position: absolute;
-    top: 6px;
-    left: 18px;
-    bottom: 148px;
-    right: 18px;
-    width: 184px;
-    height: 164px;
+    padding-top: 5px;
+    padding-left: 17px;
+    padding-bottom: 3px;
 }
 
 .item-image-1 {
-    position: absolute;
-    top: 29px;
-    left: 40px;
-    bottom: 177px;
-    right: 53px;
-    width: 127px;
-    height: 112px;
+    padding-left: 39px;
+    padding-top: 28px;
+    padding-bottom: 33px;
+    padding-right: 53px;
 }
 
 .item-image-2 {
-    position: absolute;
-    top: 22px;
-    left: 33px;
-    bottom: 168px;
-    right: 43px;
-    width: 144px;
-    height: 128px;
+    padding-left: 32px;
+    padding-top: 21px;
+    padding-bottom: 22px;
+    padding-right: 33px;
 }
 
-.popular-items-list h3 {
-    position: absolute;
-    top: 178px;
-    left: 30px;
-    bottom: 97px;
-    right: 24px;
-    margin: 0;
-    padding: 0;
-    font-size: 18px;
-    line-height: 20px;
-    color: var(--basic-black);
+.popular-items-list button:nth-child(4) {
+    margin-top: 39px;
+    padding-top: 10px;
+    padding-right: 20px;
 }
 
 .old-price {
+    display: inline-block;
+    vertical-align: middle;
     margin: 0;
     padding: 0;
-    position: absolute;
-    top: 228px;
-    left: 24px;
-    bottom: 72px;
-    right: 24px;
+    padding-left: 76px;
+    padding-right: 70px;
+    padding-top: 8px;
     font-family: "PT Sans", Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -1227,9 +1234,11 @@ img {
 }
 
 .new-price-button {
-    padding-right: 20px;
-    margin-top: 258px;
-    margin-left: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 46px;
+    margin-right: 34px;
+    margin-top: 14px;
     width: 141px;
     height: 38px;
     font-family: "PT Sans", Arial, sans-serif;
@@ -1244,6 +1253,9 @@ img {
     position: relative;
     border-radius: 3px 0 0 3px;
     cursor: pointer;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 6px;
 }
 
 .new-price-button:after {
@@ -1278,8 +1290,7 @@ img {
 
 .popular-brand {
     display: grid;
-    margin-bottom: 70px;
-    max-height: 420px;
+    margin-bottom: 53px;
 }
 
 .popular-brand-title {
@@ -1337,7 +1348,7 @@ img {
 .popular-brand-gallery {
     display: grid;
     grid-template-columns: 220px 220px 220px 220px;
-    grid-template-rows: 145px 145px 145px 145px;
+    grid-template-rows: min(145px, 145px, 145px, 145px);
     column-gap: 20px;
     grid-row-gap: 20px;
     padding: 0;
@@ -1432,35 +1443,33 @@ img {
 /*service*/
 
 .service {
-    height: 522px;
-    margin-bottom: 70px;
+    min-height: 522px;
+    margin-bottom: 69px;
     background-color: var(--basic-gray-);
     color: var(--basic-black);
     position: relative;
 }
 
+.service-name {
+    display: grid;
+    padding-top: 64px;
+}
+
 .service-title {
-    width: 107px;
-    height: 30px;
     margin: 0;
     padding: 0;
-    position: absolute;
-    top: 64px;
     font-family: "Cuprum", Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
+    margin-bottom: 24px;
 }
 
 .service-title-info {
     margin: 0;
     padding: 0;
-    width: 394px;
-    height: 49px;
-    position: absolute;
-    top: 118px;
     font-family: "PT Sans", Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -1468,11 +1477,17 @@ img {
     line-height: 24px;
 }
 
+.service-position {
+    display: grid;
+    margin-top: 70px;
+    grid-template-columns: 250px 1fr;
+}
+
 .service-info {
-    position: absolute;
-    top: 237px;
+    position: relative;
     margin: 0;
     padding: 0;
+    margin-top: 3px;
     list-style: none;
 }
 
@@ -1496,6 +1511,7 @@ img {
     line-height: 30px;
     padding-left: 22px;
     padding-right: 139px;
+    padding-bottom: 5px;
     letter-spacing: 0.6px;
     background-color: var(--basic-white);
     color: var(--basic-blue-light);
@@ -1520,7 +1536,8 @@ img {
     width: 240px;
     height: 61px;
     padding-right: 140px;
-    padding-left: 22px;
+    padding-left: 23px;
+    padding-bottom: 3px;
     letter-spacing: 0.6px;
     font-family: "Cuprum", Arial, sans-serif;
     font-style: normal;
@@ -1547,6 +1564,7 @@ img {
     height: 61px;
     padding-left: 22px;
     padding-right: 157px;
+    padding-top: 0px;
     letter-spacing: 0.6px;
     font-family: "Cuprum", Arial, sans-serif;
     font-style: normal;
@@ -1573,9 +1591,8 @@ img {
 }
 
 .about-delivery {
+    margin-left: 70px;
     position: relative;
-    width: 620px;
-    height: 285px;
     color: var(--basic-bookmark-hover);
     text-transform: uppercase;
 }
@@ -1583,27 +1600,17 @@ img {
 .about-delivery h3 {
     margin: 0;
     padding: 0;
+    padding-bottom: 29px;
     font-family: "Cuprum", Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
     line-height: 30px;
-    position: absolute;
-    top: 235px;
-    left: 320px;
-    bottom: 257px;
-    width: 305px;
-    height: 30px;
 }
 
 .about-delivery p {
     margin: 0;
     padding: 0;
-    position: absolute;
-    top: 295px;
-    left: 320px;
-    width: 300px;
-    height: 99px;
     font-family: "PT Sans", Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -1616,19 +1623,12 @@ img {
 .about-delivery img {
     margin: 0;
     padding: 0;
-    position: absolute;
-    top: 257px;
-    left: 471px;
-    right: 131px;
-    bottom: 4px;
-    width: 468px;
-    height: 261px;
+    margin-left: 151px;
+    margin-top: -135px;
 }
 
 .about-garanty {
-    position: relative;
-    width: 620px;
-    height: 285px;
+    margin-left: 70px;
     color: var(--basic-bookmark-hover);
     text-transform: uppercase;
     font: inherit;
@@ -1640,28 +1640,17 @@ img {
 .about-garanty h3 {
     margin: 0;
     padding: 0;
+    padding-bottom: 25px;
     font-family: "Cuprum", Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
     line-height: 30px;
-    position: absolute;
-    top: 235px;
-    left: 320px;
-    bottom: 257px;
-    width: 305px;
-    height: 30px;
 }
 
 .about-garanty p {
     margin: 0;
     padding: 0;
-    position: absolute;
-    top: 295px;
-    left: 320px;
-    bottom: 128px;
-    width: 300px;
-    height: 99px;
     font-family: "PT Sans", Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -1674,52 +1663,35 @@ img {
 .about-garanty img {
     margin: 0;
     padding: 0;
-    position: absolute;
-    top: 257px;
-    left: 471px;
-    right: 131px;
-    bottom: 4px;
-    width: 468px;
-    height: 261px;
+    margin-left: 240px;
+    margin-top: -178px;
 }
 
 .about-credit {
-    position: relative;
-    width: 620px;
-    height: 285px;
+    margin-left: 70px;
     color: var(--basic-bookmark-hover);
     text-transform: uppercase;
     font: inherit;
     font-size: 21px;
     line-height: 30px;
     color: var(--basic-blue-light);
+    position: relative;
 }
 
 .about-credit h3 {
     margin: 0;
     padding: 0;
+    padding-bottom: 29px;
     font-family: "Cuprum", Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
     line-height: 30px;
-    position: absolute;
-    top: 235px;
-    left: 320px;
-    bottom: 257px;
-    width: 305px;
-    height: 30px;
 }
 
 .about-credit p {
     margin: 0;
     padding: 0;
-    position: absolute;
-    top: 295px;
-    left: 320px;
-    bottom: 128px;
-    width: 300px;
-    height: 99px;
     font-family: "PT Sans", Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -1733,20 +1705,15 @@ img {
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 257px;
-    left: 471px;
-    right: 131px;
-    bottom: 4px;
-    width: 468px;
-    height: 261px;
+    left: 167px;
+    top: 0;
 }
 
 .credit-button {
     width: 195px;
     height: 38px;
-    position: absolute;
-    left: 320px;
-    top: 375px;
+    margin-top: 26px;
+    border-radius: 4px;
     font-family: "Cuprum", Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -1774,7 +1741,7 @@ img {
     display: grid;
     grid-template-columns: 470px 470px;
     column-gap: 170px;
-    margin-bottom: 69px;
+    margin-bottom: 70px;
 }
 
 .about-company h2 {
@@ -1889,14 +1856,9 @@ img {
     background-color: var(--basic-red-btn);
 }
 
-.service-info::after {
-    content: "";
-    position: absolute;
-    bottom: -50px;
-    left: 230px;
-    background-image: url(../img/service-btn-shadow.png);
-    width: 10px;
-    height: 279px;
+.service-info img {
+    margin-left: 230px;
+    margin-top: -230px;
 }
 
 
@@ -3166,16 +3128,6 @@ img {
     grid-template-columns: 1fr 1fr;
 }
 
-.popular-items-list {
-    display: grid;
-    grid-template-columns: 220px 220px 220px 220px;
-    grid-template-rows: 318px 318px 318px 318px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    background-color: var(--basic-white);
-}
-
 .item-catalog-info:nth-child(3n)::before {
     content: "";
     position: absolute;
@@ -3209,7 +3161,7 @@ img {
 }
 
 .item-catalog-info:hover img {
-    display: none;
+    visibility: hidden;
 }
 
 .item-catalog-info:hover {
@@ -3224,8 +3176,7 @@ img {
 
 .item-catalog {
     display: grid;
-    grid-template-columns: 220px 220px 220px;
-    grid-template-rows: 318px 318px 318px;
+    grid-template-columns: repeat(3, 220px);
     column-gap: 20px;
     grid-row-gap: 18px;
     font-family: "PTSans", Arial, sans-serif;
@@ -3238,41 +3189,35 @@ img {
 }
 
 .item-catalog-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     border: 1px solid var(--basic-popular-item);
     position: relative;
+    min-height: 318px;
 }
 
 .item-catalog h3 {
+    margin: 0;
+    padding: 0;
     font-family: "PT Sans", Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 20px;
-    position: absolute;
-    left: 15px;
-    right: 15px;
-    top: 178px;
-    margin: 0;
-    padding: 0;
     color: var(--basic-black);
 }
 
 .item-catalog-img {
-    position: absolute;
-    left: 30px;
-    top: 22px;
-    width: 144px;
-    height: 128px;
+    margin-left: 32px;
+    margin-top: 20px;
+    margin-bottom: 23px;
 }
 
 .item-catalog-img-1 {
-    position: absolute;
-    top: 29px;
-    left: 40px;
-    bottom: 177px;
-    right: 53px;
-    width: 127px;
-    height: 112px;
+    margin-left: 40px;
+    margin-top: 28px;
+    margin-bottom: 32px;
 }
 
 .page-list {
